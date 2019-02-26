@@ -18,33 +18,37 @@ public class Main {
 //        Thread thread = new Thread(runnable);
 //        thread.start();
 //        System.out.println("after");
-        for (int i = 0; i < 4; i++) {
-            startNewThread();
 
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
-        System.out.println(count);
-        }
-    }
+//        for (int i = 0; i < 4; i++) {
+//            startNewThread();
+//
+//        try {
+//            Thread.sleep(2000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.println(count);
+//        }
+//    }
+//
+//    private static void startNewThread() {
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i = 0; i < 1000000; i++) {
+//                    //count++;
+//                    incCount();
+//                }
+//
+//            }
+//        }).start();
+//    }
+//
+//    public static synchronized void incCount() {
+//        count++;
+        Robot robot = new Robot();
 
-    private static void startNewThread() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 1000000; i++) {
-                    //count++;
-                    incCount();
-                }
-
-            }
-        }).start();
-    }
-
-    public static synchronized void incCount() {
-        count++;
-    }
+      }
 }
